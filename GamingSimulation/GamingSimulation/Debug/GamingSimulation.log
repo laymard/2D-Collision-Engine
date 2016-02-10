@@ -1,0 +1,6 @@
+﻿  Vector3.cpp
+  main.cpp
+  Entity.cpp
+  Génération de code en cours...
+c:\users\lolo\documents\insa\newcastle\gaming simultion\gamingsimulation\gamingsimulation\vector3.cpp(55): warning C4172: retourne l'adresse d'une variable locale ou  temporaire
+  GamingSimulation.vcxproj -> C:\Users\Lolo\Documents\INSA\Newcastle\Gaming Simultion\GamingSimulation\Debug\GamingSimulation.exe
