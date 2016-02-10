@@ -1,6 +1,6 @@
-﻿  Vector3.cpp
-  main.cpp
-  Entity.cpp
+﻿  main.cpp
+  FinalVelocityCalc.cpp
+  DisplacementCalc.cpp
+c:\users\lolo\source\repos\gs2\gamingsimulation\gamingsimulation\displacementcalc.cpp(33): warning C4244: 'argument' : conversion de 'double' en 'const float', perte possible de données
   Génération de code en cours...
-c:\users\lolo\documents\insa\newcastle\gaming simultion\gamingsimulation\gamingsimulation\vector3.cpp(55): warning C4172: retourne l'adresse d'une variable locale ou  temporaire
-  GamingSimulation.vcxproj -> C:\Users\Lolo\Documents\INSA\Newcastle\Gaming Simultion\GamingSimulation\Debug\GamingSimulation.exe
+  GamingSimulation.vcxproj -> C:\Users\Lolo\Source\Repos\GS2\GamingSimulation\Debug\GamingSimulation.exe

@@ -54,3 +54,13 @@ float Vector3::length(){
 Vector3& Vector3::normalise(){
 	return *this / this->length();
 }
+
+void Vector3::input() {
+	float x, y, z;
+	cout << "Vector3::input(): input 3 float" << endl;
+	cin >> x >> y >> z;
+
+	Vector3* in = new Vector3(x, y, z);
+	cout << "Created Vector3: " << *in << endl;
+	delete in;
+}

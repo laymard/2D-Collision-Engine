@@ -1,6 +1,7 @@
 #pragma once
 #include <math.h>
-#include <ostream>
+#include <iostream>
+
 using namespace std;
 class Vector3
 {
@@ -22,6 +23,8 @@ public:
 
 	float distanceTo(Vector3& vect);
 	float length();
+
+	static void input();
 
 	Vector3&  normalise();
 

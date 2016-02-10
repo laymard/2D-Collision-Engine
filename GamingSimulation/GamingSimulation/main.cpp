@@ -1,4 +1,7 @@
 #include "Entity.h"
+#include"Calculator.h"
+#include "FinalVelocityCalc.h"
+#include"DisplacementCalc.h"
 #include <iostream>
 
 using namespace std;
@@ -40,7 +43,11 @@ int main(){
 	Vector3 normed=toNorm->normalise();
 	cout << "toNorm: " << normed << endl;
 
+	DisplacementCalc::launch();
+
 	cin >> k;
+
+	
 
 	return 0;
 }

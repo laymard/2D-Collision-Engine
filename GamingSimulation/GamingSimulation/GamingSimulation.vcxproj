@@ -78,11 +78,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Calculator.h" />
+    <ClInclude Include="DisplacementCalc.h" />
     <ClInclude Include="Entity.h" />
+    <ClInclude Include="FinalVelocityCalc.h" />
     <ClInclude Include="Vector3.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Calculator.cpp" />
+    <ClCompile Include="DisplacementCalc.cpp" />
     <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="FinalVelocityCalc.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Vector3.cpp" />
   </ItemGroup>
