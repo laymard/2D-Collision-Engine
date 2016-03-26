@@ -11,7 +11,7 @@ FinalVelocityCalc::~FinalVelocityCalc()
 {
 }
 
-Vector3 * FinalVelocityCalc::launch()
+MyVector3* FinalVelocityCalc::launch()
 {
 	float x1, x2, y1, y2, z1, z2;
 	float t;
@@ -26,8 +26,8 @@ Vector3 * FinalVelocityCalc::launch()
 	cout << "Enter time value" << endl;
 	cin >> t;
 
-	Vector3* u = new Vector3(x1, y1, z1);
-	Vector3* a = new Vector3(x2, y2, z2);
+	MyVector3* u = new MyVector3(x1, y1, z1);
+	MyVector3* a = new MyVector3(x2, y2, z2);
 
 	*u += (*a)*t;
 

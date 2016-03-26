@@ -1,0 +1,7 @@
+﻿  Mesh.cpp
+c:\users\lolo\source\repos\gs2\nclgl\mesh.cpp(78): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+c:\users\lolo\source\repos\gs2\nclgl\mesh.cpp(86): warning C4018: '<' : incompatibilité signed/unsigned
+c:\users\lolo\source\repos\gs2\nclgl\mesh.cpp(110): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+c:\users\lolo\source\repos\gs2\nclgl\mesh.cpp(118): warning C4018: '<' : incompatibilité signed/unsigned
+c:\users\lolo\source\repos\gs2\nclgl\mesh.cpp(230): warning C4018: '<' : incompatibilité signed/unsigned
+  nclgl.vcxproj -> C:\Users\Lolo\Source\Repos\GS2\GamingSimulation\Debug\nclgl.lib

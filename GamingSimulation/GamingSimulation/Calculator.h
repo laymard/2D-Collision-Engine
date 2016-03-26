@@ -1,9 +1,9 @@
 #pragma once
-#include "Vector3.h"
+#include "MyVector3.h"
 
 class Calculator {
 public:
-	 virtual Vector3* launch() = 0;
+	 virtual MyVector3* launch() = 0;
 
 	Calculator();
 	~Calculator();

@@ -11,7 +11,7 @@ DisplacementCalc::~DisplacementCalc()
 {
 }
 
-Vector3 * DisplacementCalc::launch()
+MyVector3 * DisplacementCalc::launch()
 {
 	float x1, x2, y1, y2, z1, z2;
 	float t;
@@ -26,8 +26,8 @@ Vector3 * DisplacementCalc::launch()
 	cout << "Enter time value" << endl;
 	cin >> t;
 
-	Vector3* u = new Vector3(x1, y1, z1);
-	Vector3* a = new Vector3(x2, y2, z2);
+	MyVector3* u = new MyVector3(x1, y1, z1);
+	MyVector3* a = new MyVector3(x2, y2, z2);
 
 	*u *= t;
 	*a *= 0.5*t*t;

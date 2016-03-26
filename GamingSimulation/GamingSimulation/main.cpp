@@ -2,52 +2,47 @@
 #include"Calculator.h"
 #include "FinalVelocityCalc.h"
 #include"DisplacementCalc.h"
+#include "Game.h"
 #include <iostream>
-
 using namespace std;
 
-int main(){
-	int k;
-	cout << "Hello ! " << endl;
-
-	vector<Entity*> tab;
-
-	Entity* e1 = new Entity(0.0f, 0.0f, 0.0f, 2.0f);
-	tab.push_back(e1);
-
-	Entity* e2 = new Entity(1.0f, 0.0f, 0.0f, 0.5f);
-	tab.push_back(e2);
-
-	for (vector<Entity*>::size_type i = 0; i != tab.size(); i++){
-		for (vector<Entity*>::size_type j = 0; j != tab.size(); j++){
-			if (i != j){
-				tab[i]->isInRange(tab[j]);
-			}
-		}
+int main() {
+	srand(time(NULL));
+	int nbMarbles;
+	cout << "How many marbles ? " << endl;
+	cin >> nbMarbles;
+	Window w("Vertex Transformation!", 1280, 720, false);
+	if (!w.HasInitialised()) {
+		return -1;
 	}
 
-	cout << "Entities in range" << endl;
+	Game* game = new Game(w, 120.0f);
+	Mesh* square = Mesh::GenerateSquare();
+	if (!game->getRenderer()->HasInitialised()) {
+		return -1;
+	}
 
-	cout << e1->getEntitiesInRange() << endl;
-	cout << e2->getEntitiesInRange() << endl;
 
-	cout << "Multiplication" << endl;
-	Vector3* test = new Vector3(1.0f, 1.0f, 1.0f);
-	*test *= 3.0f;
-	cout << *test;
-	delete test;
+	/*for (int i = 0; i < nbMarbles; i++) {
+		game->addRandomBall();
+		*(game->getEntities()[game->getBoundaries().size() + 1 + i]->_velocity) = MyVector3::randomDirection()*40.0f*(i+1);
+	}*/
 
-	cout << "Normalisation of e1" << endl;
-
-	Vector3* toNorm = new Vector3(2.0f, 2.0f, 2.0f);
-	Vector3 normed=toNorm->normalise();
-	cout << "toNorm: " << normed << endl;
-
-	DisplacementCalc::launch();
-
-	cin >> k;
-
+	for (int i = 0; i < 13; i++)
+	{
+		game->addMarble(MyVector3(-50.0f, (-1.6f*50.0f)+(i+1) * 10,-500.0f));
+		game->addMarble(MyVector3(50.0f, (-1.6f * 50.0f) +(i+1) * 10, -500.0f));
+		*(game->getEntities()[game->getBoundaries().size() + 1 + i*2]->_velocity) = MyVector3(10 * (i+1), 0, 0);
+		*(game->getEntities()[game->getBoundaries().size() + 2 + i*2]->_velocity) = MyVector3(10 * -(i + 1), 0, 0);
+	}
 	
+	game->getRenderer()->SwitchToOrthographic();
+	while (w.UpdateWindow() && !Window::GetKeyboard()->KeyDown(KEYBOARD_ESCAPE)) {
+		game->update();
+	}
+
+
+	delete game;
 
 	return 0;
 }

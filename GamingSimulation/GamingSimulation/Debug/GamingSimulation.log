@@ -1,6 +1,2 @@
-﻿  main.cpp
-  FinalVelocityCalc.cpp
-  DisplacementCalc.cpp
-c:\users\lolo\source\repos\gs2\gamingsimulation\gamingsimulation\displacementcalc.cpp(33): warning C4244: 'argument' : conversion de 'double' en 'const float', perte possible de données
-  Génération de code en cours...
+﻿  CollisionState.cpp
   GamingSimulation.vcxproj -> C:\Users\Lolo\Source\Repos\GS2\GamingSimulation\Debug\GamingSimulation.exe

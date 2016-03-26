@@ -6,6 +6,6 @@ public:
 	DisplacementCalc();
 	~DisplacementCalc();
 
-	static Vector3* launch();
+	static MyVector3* launch();
 };
 

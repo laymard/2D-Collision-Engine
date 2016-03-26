@@ -6,6 +6,6 @@ public:
 	FinalVelocityCalc();
 	~FinalVelocityCalc();
 
-	static Vector3* launch();
+	static MyVector3* launch();
 };
 
