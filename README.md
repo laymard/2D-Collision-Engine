@@ -2,6 +2,11 @@
 Student project made at Newcastle University for Gaming Simulation Courses.
 
 # Features
-Represent a small pool with red marbles. You can interact to move the white marble to the left to make it collide with other marbles. This programm detect in real-time all collisions, and apply an impulsion on each marble collided.
+Represent a small pool with white and red marbles. You can interact to move the white marble to the left to make it collide with other marbles. This programm detect in real-time all collisions, and apply an impulsion on each marble collided.
+
+# Technologies used
+* NCLGL Library ( easy implementation of the OpenGL library )
+* Visual Studio 2015
+* C++
 
 ![images/Capture.JPG](images/Capture.JPG)
